@@ -29,6 +29,11 @@ namespace AddressBook
 
         return View["contact_details.cshtml", currentContact];
       };
+      Post["/contacts/clear"] = _ =>
+      {
+        Contact.ClearAllContacts();
+        return View["contacts_cleared.cshtml"];
+      };
     }
   }
 }
