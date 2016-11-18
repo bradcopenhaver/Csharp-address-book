@@ -23,6 +23,12 @@ namespace AddressBook
         return View["index.cshtml", allContacts];
       };
       Get["/contact/new"] = _ => View["contact_form.cshtml"];
+      Get["/contact/{id}"] = parameters =>
+      {
+        Contact currentContact = Contact.Find(parameters.id);
+
+        return View["contact_details.cshtml", currentContact];
+      };
     }
   }
 }

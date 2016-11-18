@@ -1,0 +1,13 @@
+<head>
+
+</head>
+<h1>Contact Details</h1>
+<h3>@Model.GetFirstName() @Model.GetLastName()</h3>
+<p>Email address: @Model.GetEmail()</p>
+<p>Phone number: @Model.GetPhone()</p>
+<p>Mailing address:</p>
+<p>@Model.GetAddress().GetStreet()</p>
+<p>@Model.GetAddress().GetCity(), @Model.GetAddress().GetState(), @Model.GetAddress().GetZip()</p>
+
+<p><a href="/contact/new">Add another contact</a></p>
+<p><a href="/">Return to contact list</a></p>
