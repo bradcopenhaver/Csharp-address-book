@@ -13,11 +13,16 @@ namespace AddressBook
         List<Contact> allContacts = Contact.GetAllContacts();
 
         return View["index.cshtml", allContacts];
-      }
+      };
       Post["/"] = _ =>
       {
-        
-      }
+        Address newAddress = new Address(Request.Form["street"], Request.Form["city"], Request.Form["state"], Request.Form["zip"]);
+        Contact newContact = new Contact(Request.Form["firstName"], Request.Form["lastName"], Request.Form["phone"], Request.Form["email"], newAddress);
+        List<Contact> allContacts = Contact.GetAllContacts();
+
+        return View["index.cshtml", allContacts];
+      };
+      Get["/contact/new"] = _ => View["contact_form.cshtml"];
     }
   }
 }

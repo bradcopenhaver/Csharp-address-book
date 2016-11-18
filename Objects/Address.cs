@@ -12,7 +12,7 @@ namespace AddressBook.Objects
 
     private static List<Address> _instances = new List<Address>{};
 
-    public Address(street, city, state, zip)
+    public Address(string street, string city, string state, string zip)
     {
       _street = street;
       _city = city;
@@ -27,7 +27,7 @@ namespace AddressBook.Objects
     {
       return _street;
     }
-    public void SetStreet(newStreet)
+    public void SetStreet(string newStreet)
     {
       _street = newStreet;
     }
@@ -35,7 +35,7 @@ namespace AddressBook.Objects
     {
       return _city;
     }
-    public void SetCity(newCity)
+    public void SetCity(string newCity)
     {
       _city = newCity;
     }
@@ -43,7 +43,7 @@ namespace AddressBook.Objects
     {
       return _state;
     }
-    public void SetState(newState)
+    public void SetState(string newState)
     {
       _state = newState;
     }
@@ -51,7 +51,7 @@ namespace AddressBook.Objects
     {
       return _zip;
     }
-    public void SetZip(newZip)
+    public void SetZip(string newZip)
     {
       _zip = newZip;
     }
@@ -59,7 +59,7 @@ namespace AddressBook.Objects
     {
       return _id;
     }
-    public static Address Find(searchId)
+    public static Address Find(int searchId)
     {
       return _instances[searchId-1];
     }

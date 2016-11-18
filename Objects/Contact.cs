@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 namespace AddressBook.Objects
 {
-  public Class Contact
+  public class Contact
   {
     private string _firstName;
     private string _lastName;
@@ -13,7 +13,7 @@ namespace AddressBook.Objects
 
     private static List<Contact> _instances = new List<Contact>{};
 
-    public Contact(firstName, lastName, phone, email, address)
+    public Contact(string firstName, string lastName, string phone, string email, Address address)
     {
       _firstName = firstName;
       _lastName = lastName;
@@ -28,7 +28,7 @@ namespace AddressBook.Objects
     {
       return _firstName;
     }
-    public void SetFirstName(newName)
+    public void SetFirstName(string newName)
     {
       _firstName = newName;
     }
@@ -36,7 +36,7 @@ namespace AddressBook.Objects
     {
       return _lastName;
     }
-    public void SetLastName(newName)
+    public void SetLastName(string newName)
     {
       _lastName = newName;
     }
@@ -44,7 +44,7 @@ namespace AddressBook.Objects
     {
       return _phone;
     }
-    public void SetPhone(newPhone)
+    public void SetPhone(string newPhone)
     {
       _phone = newPhone;
     }
@@ -52,7 +52,7 @@ namespace AddressBook.Objects
     {
       return _email;
     }
-    public void SetEmail(newEmail)
+    public void SetEmail(string newEmail)
     {
       _email = newEmail;
     }
@@ -60,7 +60,7 @@ namespace AddressBook.Objects
     {
       return _address;
     }
-    public void SetAddress(newAddress)
+    public void SetAddress(Address newAddress)
     {
       _address = newAddress;
     }
@@ -68,7 +68,7 @@ namespace AddressBook.Objects
     {
       return _id;
     }
-    public static void GetAllContacts()
+    public static List<Contact> GetAllContacts()
     {
       return _instances;
     }
@@ -76,7 +76,7 @@ namespace AddressBook.Objects
     {
       _instances.Clear();
     }
-    public static Contact Find(searchId)
+    public static Contact Find(int searchId)
     {
       return _instances[searchId-1];
     }
