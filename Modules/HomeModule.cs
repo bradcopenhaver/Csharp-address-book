@@ -8,8 +8,13 @@ namespace AddressBook
   {
     public HomeModule()
     {
-      Get["/"] = _ => View["index.cshtml"];
-      
+      Get["/"] = _ =>
+      {
+        List<Contact> allContacts = Contact.GetAllContacts();
+
+        return View["index.cshtml", allContacts];
+      }
+
     }
   }
 }
