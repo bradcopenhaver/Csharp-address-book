@@ -16,8 +16,10 @@
           <p><strong>Phone number:</strong></p>
           <p>@Model.GetPhone()</p>
           <p><strong>Mailing address:</strong></p>
-          <p>@Model.GetAddress().GetStreet()</p>
-          <p>@Model.GetAddress().GetCity(), @Model.GetAddress().GetState(), @Model.GetAddress().GetZip()</p>
+          <p>
+            @Model.GetAddress().GetStreet()<br>
+            @Model.GetAddress().GetCity(), @Model.GetAddress().GetState(), @Model.GetAddress().GetZip()
+          </p>
         </div>
       </div>
       <p><a href="/contact/form">Add another contact</a></p>
