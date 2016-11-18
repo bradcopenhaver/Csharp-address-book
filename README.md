@@ -8,23 +8,28 @@
 
 This is a simple address book application. The user creates a contact entry by submitting a form. A confirmation page is shown for each contact created, and users can view a list of all contacts created so far. Details for individual contacts can be accessed by clicking on the entry in the list. The entire list can be also be cleared.
 
-###Specifications
+### Specifications
+
 _This program will..._
 * Save contact details that the user submits.
  * Input: Joe Wilson
  * Output: {"Joe", "Wilson"}
 
+
 * Display saved contact details back to the user.
  * Input: {"Joe", "Wilson"}
  * Output: Joe Wilson
+
 
 * Save multiple contacts.
  * Input: Joe Wilson, Fred Jones
  * Output: {"Joe", "Wilson"}, {"Fred", "Jones"}
 
+
 * Display a list of all contacts entered.
   * Input: {"Joe", "Wilson"}, {"Fred", "Jones"}
   * Output: Joe Wilson, Fred Jones
+
 
 * Allow the user to clear all saved contacts.
  * Input: Clear All
@@ -33,6 +38,7 @@ _This program will..._
 ## Setup/Installation Requirements
 
 Source code available at https://github.com/bradcopenhaver/Csharp-address-book
+
 App can be viewed at https://bradcopenhaver.github.io/Csharp-address-book
 
 ## Known Bugs
@@ -41,10 +47,10 @@ Non-numeric input fields will accept any input.
 
 ## Possible future version features
 
-Search function.
-Delete individual entries.
-Store multiple addresses for each contact, e.g. home, work, vacation.
-Store multiple phone numbers for each contact, e.g. cell, work, home.
+* Search function.
+* Delete individual entries.
+* Store multiple addresses for each contact, e.g. home, work, vacation.
+* Store multiple phone numbers for each contact, e.g. cell, work, home.
 
 ## Support and contact details
 
