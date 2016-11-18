@@ -1,24 +1,31 @@
  <head>
-
+   <link rel="stylesheet" href="/Content/css/bootstrap.css" type="text/css">
+   <link rel="stylesheet" href="/Content/css/styles.css" type="text/css">
  </head>
- <h1>Add new contact</h1>
- <form action="/contact/new" method="post">
-   <label for="firstName">First Name:</label>
-   <input type="text" name="firstName" id="firstName"><br>
-   <label for="lastName">Last Name:</label>
-   <input type="text" name="lastName" id="lastName"><br>
-   <label for="email">Email address:</label>
-   <input type="text" name="email" id="email"><br>
-   <label for="phone">Phone number:</label>
-   <input type="number" name="phone" id="phone"><br>
-   <label for="street">Street address:</label>
-   <input type="text" name="street" id="street"><br>
-   <label for="city">City:</label>
-   <input type="text" name="city" id="city">
-   <label for="state">State:</label>
-   <input type="text" name="state" id="state">
-   <label for="zip">ZIP code:</label>
-   <input type="number" name="zip" id="zip"><br>
-   <button type="submit">Add Contact</button>
- </form>
- <p><a href="/">Return to contact list</a></p>
+ <div class="container">
+   <div class="row">
+     <div class="col-sm-12">
+       <h1>Add new contact</h1>
+       <form action="/contact/new" method="post">
+         <label for="firstName">First Name:</label>
+         <input type="text" name="firstName" id="firstName"><br>
+         <label for="lastName">Last Name:</label>
+         <input type="text" name="lastName" id="lastName"><br>
+         <label for="email">Email address:</label>
+         <input type="text" name="email" id="email"><br>
+         <label for="phone">Phone number:</label>
+         <input type="number" name="phone" id="phone"><br>
+         <label for="street">Street address:</label>
+         <input type="text" name="street" id="street"><br>
+         <label for="city">City:</label>
+         <input type="text" name="city" id="city">
+         <label for="state">State:</label>
+         <input type="text" name="state" id="state">
+         <label for="zip">ZIP code:</label>
+         <input type="number" name="zip" id="zip"><br>
+         <button type="submit">Add Contact</button>
+       </form>
+       <p><a href="/">Return to contact list</a></p>
+     </div>
+   </div>
+ </div>

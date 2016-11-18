@@ -39,6 +39,13 @@ App can be viewed at https://bradcopenhaver.github.io/Csharp-address-book
 
 Non-numeric input fields will accept any input.
 
+## Possible future version features
+
+Search function.
+Delete individual entries.
+Store multiple addresses for each contact, e.g. home, work, vacation.
+Store multiple phone numbers for each contact, e.g. cell, work, home.
+
 ## Support and contact details
 
 If you have questions or comments, contact the author at bradcopenhaver@gmail.com
@@ -46,10 +53,10 @@ If you have questions or comments, contact the author at bradcopenhaver@gmail.co
 ## Technologies Used
 
 * C#
-* Bootstrap
 * Nancy framework
 * Razor view engine
 * html/css
+* Bootstrap
 
 ### License
 
